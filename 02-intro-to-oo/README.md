@@ -1,24 +1,12 @@
 # Intro to Object Orientation
 # SWBAT - Students Will Be Able To
 # Questions:
-- [ ] ||= 
-    - or = 
-    - if number exists 
-            do somethings
-        else 
-            do something else
-        end 
-    - players[:player_name] ||= "Chris"
-        players[:player_name] = "Chriss"
-    - numbers[:one] ||= 1
-    - players[:player_name] == nil ?  1 : 0
-    if players[:player_name] 
-        players[:player_name] = 1
-    else
-        players[:player_name] = 0
-    end
+- [x] Quickly explain how to do number 1 in DQ
+- [ ] Regular Expression to solve someproblems (email parser)
+https://regexr.com/
+soundarya@gmail.com
+\w+       @\w+   .com
 
-- [ ] Difference between a method `prints` or `puts` and `p` out or the return value
 ## Objectives
 
 - [ ] Define `object` in programming domain
