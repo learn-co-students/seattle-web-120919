@@ -1,11 +1,6 @@
 # Intro to Object Orientation
 # SWBAT - Students Will Be Able To
 # Questions:
-- [x] Quickly explain how to do number 1 in DQ
-- [ ] Regular Expression to solve someproblems (email parser)
-https://regexr.com/
-soundarya@gmail.com
-\w+       @\w+   .com
 
 ## Objectives
 
