@@ -58,8 +58,9 @@ class User
         end
     end
 
-    def unlike_tweet(tweet)s
-        Like.all.find do |like|
+    def unlike_tweet(tweet)
+        # binding.pry
+        like = Like.all.find do |like|
             like.user == self && like.tweet == tweet
         end
         Like.all.delete(like)
