@@ -1,0 +1,12 @@
+require_relative 'config/environment'
+
+desc "Prints hello world"
+task :hello_world do
+    puts "Hello World"
+end
+
+desc "Starts a console session"
+task :console do 
+    sh 'bundle'
+    Pry.start
+end
