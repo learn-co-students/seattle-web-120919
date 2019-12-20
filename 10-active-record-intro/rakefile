@@ -1,0 +1,30 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+
+desc "Prints hello world"
+task :hello_world do 
+    puts "Hello world"
+end
+
+desc "starts a console session"
+task :console do
+    coffee_dad = User.create(username: "Coffee Dad")
+    
+    tea_uncle = User.create(username: "Tea Uncle")
+    donut_mom = User.create(username: "Donut Mom")
+
+    # user = User.all.first
+
+    t1 = Tweet.create(message: "Coffeee is amazing", user_id:  coffee_dad.id)
+    t2 = Tweet.create(message: "Coffeee is ok", user_id:  tea_uncle.id)
+    t3 = Tweet.create(message: "Coffeee is weird", user_id:  tea_uncle.id)
+    ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+
+    Like.create(user_id: donut_mom.id, tweet_id:  t1.id)
+    Like.create(user_id: donut_mom.id, tweet_id:  t2.id)
+    Like.create(user_id: donut_mom.id, tweet_id:  t3.id)
+    Like.create(user_id: coffee_dad.id, tweet_id:  t1.id)
+    Like.create(user_id: tea_uncle.id, tweet_id:  t2.id)
+    Pry.start
+end
