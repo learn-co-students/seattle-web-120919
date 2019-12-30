@@ -1,0 +1,19 @@
+require_relative 'config/environment'
+require 'sinatra/activerecord/rake'
+# Things to include in Rakefile
+# 1. console -> we launch a console sessions -> pry
+# 2. migrations -> active record tasks
+
+desc "Launch a console sessions"
+task :console do
+    Pry.start
+end
+
+task :run_project do 
+    puts "Please enter a letter"
+    input = STDIN.gets.chomp
+    if input == 'a'
+        books = Book.all
+        binding.pry
+    end
+end
