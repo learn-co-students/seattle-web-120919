@@ -12,6 +12,8 @@
  - Understand the basics of models, views, and controllers
  - Explain the flow of control from request to response in an MVC framework
 
+<img src="MVC_diagram.jpg" alt="MVC diagram drawn on whiteboard" width="300"/>
+
 (Note: we did not use a "deliverables" format in this lecture, only looked at pre-written code and did some tweaking)
 
 ## Part 1: Rack
