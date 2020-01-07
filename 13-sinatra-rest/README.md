@@ -2,21 +2,25 @@
 
 | CRUD Letter | RESTful Route          | Controller Action |
 |-------------|------------------------|-------------------|
+| C(reate)    | POST   /books          | create            |
 | R(ead)      | GET    /books          | index             |
+| R(ead)      | GET    /books/:id      | show              |
+| U(pdate)    | PATCH  /books/:id      | update            |
+| D(elete)    | DELETE /books/:id      | destroy           |
 
 ## Students Will Be Able to:
  
- - [ ] Explain the connection between HTTP methods and CRUD
- - [ ] Explain the connection between HTTP URL paths and CRUD
- - [ ] Implement server-side full CRUD in Sinatra
- - [ ] Use Postman to test controller actions when the view code has not been completed
+ - [x] Explain the connection between HTTP methods and CRUD
+ - [x] Explain the connection between HTTP URL paths and CRUD
+ - [x] Implement server-side full CRUD in Sinatra
+ - [x] Use Postman to test controller actions when the view code has not been completed
 
 ## Deliverables
 
- - [ ] As a user, I should be able to view the information about a particular book by providing its ID
- - [ ] As a user, I should be able to create a new book by providing form data (using Postman)
- - [ ] As a user, I should be able to update an existing book by providing its ID as well as form data (using Postman)
- - [ ] As a user, I should be able to delete an existing book by providing its ID (using Postman)
+ - [x] As a user, I should be able to view the information about a particular book by providing its ID
+ - [x] As a user, I should be able to create a new book by providing form data (using Postman)
+ - [x] As a user, I should be able to update an existing book by providing its ID as well as form data (using Postman)
+ - [x] As a user, I should be able to delete an existing book by providing its ID (using Postman)
 
 ## Questions to Ask for Each Deliverable
 

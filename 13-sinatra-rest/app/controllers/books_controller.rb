@@ -11,4 +11,25 @@ class BooksController < Sinatra::Base
     erb :index
   end
 
+  # show
+  get '/books/:id' do
+    @book = Book.find(params[:id])
+    erb :show
+  end
+
+  # create
+  post '/books' do
+    book = Book.create(title: params[:title], author: params[:author], snippet: params[:snippet])
+  end
+
+  # update
+  patch '/books/:id' do
+    book = Book.find(params[:id])
+    book.update(title: params[:title], author: params[:author], snippet: params[:snippet])
+  end
+
+  # destroy
+  delete '/books/:id' do
+    Book.destroy(params[:id])
+  end
 end
