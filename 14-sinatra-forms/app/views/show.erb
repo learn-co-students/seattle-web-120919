@@ -2,4 +2,9 @@
 <h3><%= @book.author %></h3>
 <p><%= @book.snippet %></p>
 
+<form action="/books/<%= @book.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete this book">
+</form>
+
 <a href="/books">Back to books index</a>

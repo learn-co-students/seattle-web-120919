@@ -2,25 +2,27 @@
 
 | CRUD Letter | RESTful Route          | Controller Action |
 |-------------|------------------------|-------------------|
+| C(create)   | GET    /books/new      | new               |
 | C(reate)    | POST   /books          | create            | 
 | R(ead)      | GET    /books          | index             |
 | R(ead)      | GET    /books/:id      | show              |
+| U(pdate)    | GET    /books/:id/edit | edit              |
 | U(pdate)    | PATCH  /books/:id      | update            |
 | D(elete)    | DELETE /books/:id      | destroy           |
 
 ## Students Will Be Able to:
  
- - [ ] Understand the basic features of HTML forms
+ - [x] Understand the basic features of HTML forms
     - `action`
     - `method`
- - [ ] Understand the connection between form inputs and params hash
- - [ ] Implement full-stack full CRUD on a single model in Sinatra
+ - [x] Understand the connection between form inputs and params hash
+ - [x] Implement full-stack full CRUD on a single model in Sinatra
 
 ## Deliverables
 
- - [ ] As a user, I should be able to view a form in the browser and enter information to create a new book
- - [ ] As a user, I should be able to view a form in the browser and enter information to update an existing book
- - [ ] As a user, I should be able to delete an existing book by clicking a "delete" button
+ - [x] As a user, I should be able to view a form in the browser and enter information to create a new book
+ - [x] As a user, I should be able to view a form in the browser and enter information to update an existing book
+ - [x] As a user, I should be able to delete an existing book by clicking a "delete" button
 
 ## Questions to Ask for Each Deliverable
 
