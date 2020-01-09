@@ -1,0 +1,8 @@
+<h1>Edit Book Form</h1>
+<form action="/books/<%= @book.id %>" method="POST">
+  <input type="hidden" name="_method" value="PATCH">
+  Title: <input type="text" name="title" value="<%= @book.title %>"><br>
+  Author: <input type="text" name="author" value="<%= @book.author %>"><br>
+  Snippet: <textarea name="snippet"><%= @book.snippet %></textarea><br>
+  <input type="submit" value="Submit">
+</form>

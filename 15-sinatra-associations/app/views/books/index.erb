@@ -1,0 +1,6 @@
+<h2>Index Page</h2>
+
+<% @books.each do |book| %>
+  <h4><%= book.title %></h4>
+  <h5><%= book.author.name %></h5>
+<% end %>
