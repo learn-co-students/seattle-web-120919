@@ -11,6 +11,7 @@ class BooksController < ApplicationController
 
   # new
   get '/books/new' do
+    @authors = Author.all
     erb :"/books/new"
   end
 
@@ -23,7 +24,7 @@ class BooksController < ApplicationController
   # create
   post '/books' do
     byebug
-    book = Book.create(title: params[:title], author: params[:author], snippet: params[:snippet])
+    book = Book.create(title: params[:title], author_id: params[:author_id].to_i, snippet: params[:snippet])
     redirect '/books'
   end
 

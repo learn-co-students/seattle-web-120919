@@ -1,7 +1,11 @@
 <h1>New Book Form</h1>
 <form action="/books" method="POST">
   Title: <input type="text" name="title"><br>
-  Author: <input type="text" name="author"><br>
+  <select name="author_id">
+     <% @authors.each do |author| %>
+      <option name="author_id" value="<%= author.id %>"> <%= author.name %> </option>
+     <% end %>
+  </select> <br>
   Snippet: <input type="text" name="snippet"><br>
   <input type="submit" value="Submit">
 </form>

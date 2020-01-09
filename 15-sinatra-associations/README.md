@@ -7,6 +7,11 @@
     - static -> doesn't change
 
 
+## Questions
+- Puppy Lab -> @puppy (instance variable), being accessed in the view. -> how did we get access to this variable.
+- Code Challenge Questions : Friday -> Week 2.
+
+
 ## Questions :
   - CRUD -> Sinatra
   - Create :
@@ -66,6 +71,8 @@
     3. What view(s) do I need?
     - show.erb
 - [ ] **As a site visitor, I should be able to create a new book and associate it with an existing author.**
+  - new action in book
+  - new.erb
       
 
 ### Routes Summary
