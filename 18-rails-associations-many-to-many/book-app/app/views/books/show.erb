@@ -1,0 +1,7 @@
+<h2><%= @book.title %></h2>
+<% @book.authors.each do |author| %>
+    <%= link_to author.name, author_path(author) %><br>
+<% end %>
+<%= @book.snippet %><br>
+<%= link_to "DESTROY", book_path(@book), method: :delete %>
+<%= link_to "EDIT", edit_book_path(@book) %>
