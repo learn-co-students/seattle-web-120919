@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for @book do |f| %>
     <%= f.label "Title : " %>
     <%= f.text_field :title %>
@@ -6,4 +7,14 @@
     <%= f.label "Snippet : " %>
     <%= f.text_field :snippet %>
     <%= f.submit "YAAAAS" %>
+=======
+<%= form_for @book, url: create_book_path do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :author %>
+    <%= f.text_field :author%>
+    <%= f.label :snippet %>
+    <%= f.text_field :snippet%>
+    <%= f.submit %>
+>>>>>>> a6bc1f4270d447d5ed912e53bac4873ce87ce83a
 <% end %>

@@ -1,0 +1,11 @@
+<!-- Show page -->
+<h3><%= @book.title %> <br></h3>
+<% @book.authors.each do |author| %>
+        <h2><%= author.name %></h2>
+    <% end %>
+<%= @book.snippet %>
+
+<form action="/books/<%= "#{@book.id}" %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="DELETE">
+</form>

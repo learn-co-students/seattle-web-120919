@@ -10,6 +10,10 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+<<<<<<< HEAD
     "webpack-dev-server": "^3.10.1"
+=======
+    "webpack-dev-server": "^3.9.0"
+>>>>>>> a6bc1f4270d447d5ed912e53bac4873ce87ce83a
   }
 }

@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 <h1>Books#index</h1>
 <p>Find me in app/views/books/index.html.erb</p>
 
 <% @books.each do |book| %> 
     <%= link_to book.title, book_path(book.id) %><br>
+=======
+<% @books.each do |book| %>
+    <%= link_to book.title,  show_book_path(book) %> <br>
+>>>>>>> a6bc1f4270d447d5ed912e53bac4873ce87ce83a
 <% end %>
