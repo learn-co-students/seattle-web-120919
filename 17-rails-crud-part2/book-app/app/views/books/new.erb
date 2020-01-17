@@ -1,0 +1,12 @@
+New Form Page
+
+<%= form_for(@book) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :author %> <br>
+    <%= f.collection_check_boxes :author_ids, @authors, :id, :name %> <br>
+    <%= f.collection_select :author_ids, @authors, :id, :name %>
+    <%= f.label :snippet %>
+    <%= f.text_field :snippet %>
+    <%= f.submit%>
+<% end %>
