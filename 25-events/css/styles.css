@@ -1,0 +1,11 @@
+.form-warning {
+    display: none;
+    background-color: lightcoral;
+    color:black;
+}
+
+.form-success {
+    background-color: lightgreen;
+    color: green;
+    opacity: 0;
+}
