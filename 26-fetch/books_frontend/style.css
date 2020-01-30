@@ -1,0 +1,19 @@
+body{
+
+	background: pink;
+}
+
+.card{
+
+	display:inline-block;
+	border-style: double;
+	width: 310px;
+}
+
+img {
+	height:325px;
+}
+
+#edit-form {
+	display: none;
+}
