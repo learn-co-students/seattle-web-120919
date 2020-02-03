@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Flatiron Trivia</title>
+    <script src="js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="mainarea">
+      <div class="nav navbar">
+        <h1>Flatiron Trivia</h1>
+        <h2>The best trivia app at Flatiron School</h2>
+      </div>
+      <div class="container">
+        <div class="main jumbotron row">
+          <div class="col col-md-6">
+            <div class="card" id="question">
+              <div class="card-body">
+                <h5 class="card-title">Category</h5>
+                <p class="card-text">
+                  Question?
+                </p>
+                <button class="btn btn-primary" id="answer-button">
+                  Toggle Answer
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6">
+            <div class="card hidden" id="answer">
+              <div class="card-body">
+                <h5 class="card-title">Answer</h5>
+                <p class="card-text">
+                  would we want to see more info here?
+                </p>
+                <button class="btn btn-primary" id="next-button">
+                  Next Question
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h5>Questions and Answers taken from Jeopardy</h5>
+    </div>
+  </body>
+</html>
