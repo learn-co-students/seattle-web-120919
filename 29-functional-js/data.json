@@ -1,0 +1,12 @@
+{
+  "hobbits": [
+    {
+      "name": "Sam",
+      "age": 34
+    },
+    {
+      "name": "Frodo",
+      "age": 24
+    }
+  ]
+}
