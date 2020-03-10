@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #163c8a;
+  border: solid black 10px;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button-container {
+  margin: auto;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+button {
+  height: 40px;
+  border-radius: 50px;
+  width: 120px;
+  border: 3px solid black;
+  background-color: #163c8a;
+  color: white;
+  font-size: 20px;
+}
+
+.album-container {
+  margin-top: 20px;
+}
+
+.album-container > img {
+  height: 600px;
+  width: 600px;
+}
